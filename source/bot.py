@@ -10,6 +10,6 @@ def reaction_to_text(message):
     if message.text == "/start":
         bot.send_message(message.from_user.id, f"Привет, {message.from_user.first_name}, я бот, умеющий создавать список покупок")
     else:
-        bot.send_message(message.from_user.id, "Не понимаю тебя")
+        bot.send_message(message.from_user.id, "Я не понимаю тебя.")
 
 bot.polling(none_stop=True, interval=0)
