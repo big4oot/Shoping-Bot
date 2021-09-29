@@ -22,3 +22,9 @@ def get_formatted_lists(user_id):
     msg += "Выберите номер списка"
     return msg, len(lists)
 
+def get_formatted_list_items(user_id, number):
+    items = get_lists(user_id)[int(number)-1]['list_data'].split('; ')
+    msg = ""
+    for index, item in enumerate(items):
+        msg += f"{index+1}. {item.strip(';')}\n"
+    return msg

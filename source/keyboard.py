@@ -8,5 +8,9 @@ def get_menu_keyboard():
     keyboard.add(types.KeyboardButton("Изменить списки"))
     return keyboard
 
-def get_number_lists(list_count):
-    pass
+def get_number_keyboard(list_count):
+    keyboard = types.ReplyKeyboardMarkup(one_time_keyboard=True)
+    for i in range(1, list_count+1):
+        keyboard.add(types.KeyboardButton(i))
+    return keyboard
+    
