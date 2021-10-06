@@ -5,7 +5,7 @@ def get_menu_keyboard():
     keyboard.add(types.KeyboardButton("Посмотреть списки"))
     keyboard.add(types.KeyboardButton("Создать списки"))
     keyboard.add(types.KeyboardButton("Удалить списки"))
-    keyboard.add(types.KeyboardButton("Изменить списки"))
+    keyboard.add(types.KeyboardButton("Изменить список"))
     return keyboard
 
 def get_number_keyboard(list_count):
@@ -14,3 +14,5 @@ def get_number_keyboard(list_count):
         keyboard.add(types.KeyboardButton(i))
     return keyboard
     
+
+ 
